@@ -95,16 +95,6 @@ function findNextPalindrome(inputDate) {
   prevMonth = Number(split[1]);
   prevYear = Number(split[0]);
 
-  console.log(
-    prevDate,
-    prevMonth,
-    prevYear,
-    "==",
-    nextDate,
-    nextMonth,
-    nextYear
-  );
-
   daysElapsed = 0;
 
   while (true) {
@@ -142,16 +132,6 @@ function findNextPalindrome(inputDate) {
         prevDate = daysOfMonth[prevMonth - 1];
       }
     }
-
-    console.log(
-      prevDate,
-      prevMonth,
-      prevYear,
-      "==",
-      nextDate,
-      nextMonth,
-      nextYear
-    );
 
     prevFormat = formats(
       prevDate.toString(),
